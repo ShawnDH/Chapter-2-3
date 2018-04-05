@@ -10,7 +10,7 @@ int main()
 {
 	double hoursWorked;
 	double hourlyPay;
-	int netPaid;
+	double netPaid;
 	netPaid = hourlyPay * hoursWorked;
 
 	std::cout << "Please input your hourly pay \n >";
