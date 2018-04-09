@@ -34,14 +34,15 @@ int main()
 	std::cin >> oneTimePhoneYoN;
 	if (oneTimePhoneYoN == 1)
 	{
-		std::cout << "In minuites, how long would you like to use the phone? ($0.25 per minuite) \n >";
+		std::cout << "In minuites, how long would you like to use the phone? ($0.25 per minuite or to cancel press 0) \n >";
 		std::cin >> phoneMin;
 	}
 	else
 	{
 		phoneMin = 0;
 	}
-	std::cout << "Your total is $" << ((nightsStayed * perNightRate) + (roomServiceYoN * roomService) + (phoneMin * phoneCharge)) * tax << std::endl;
+	std::cout << "Your total is $" << ((nightsStayed * perNightRate) + (roomServiceYoN * roomService) + 
+		(phoneMin * phoneCharge)) * tax << std::endl;
 
 
 	system("pause");
