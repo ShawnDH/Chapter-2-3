@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 int main()
 {
@@ -13,6 +14,9 @@ int main()
 	double fica = .08;
 	double incomeTax = .04;
 	int randomNumber = rand();
+
+	srand((unsigned)time(0));
+	randomNumber = (rand() % 100) + 1;
 
 	std::cout << "Please input employee #" << randomNumber << "'s weekly gross pay \n >$";
 	std::cin >> grossPay;

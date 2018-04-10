@@ -3,9 +3,7 @@
 //Author:ShawnD Herrick
 
 #include <iostream>
-#include <string>
 #include <iomanip>
-#include <windows.h>
 
 int main()
 {
